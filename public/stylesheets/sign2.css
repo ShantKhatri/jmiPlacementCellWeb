@@ -1,0 +1,84 @@
+body, .dropdown-menu{
+    background-color: rgb(226, 226, 226);
+}
+
+.form-control{
+    background-color: rgb(245, 245, 245);
+}
+
+h1{
+    color: #212529;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: 1.78em !important;
+    text-decoration: none !important; 
+}
+
+
+body > div > main > div:nth-child(4) > form > button{
+    width: 10%;
+    margin-left: 45%;
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    /* display: flex !important;
+    align-items: center; */
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgb(130 138 145 / 50%);
+}
+
+primary.dropdown-toggle {
+    color: #fff;
+    background-color: #545b62;
+    border-color: #4e555b;
+}
+primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #545b62;
+    border-color: #4e555b;
+}
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgb(130 138 145 / 50%);
+}
+
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #545b62;
+    border-color: #4e555b;
+}
+
+.form-control:focus {
+    color: #495055;
+    background-color: #fff;
+    border-color: #545b62;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(130 138 145 / 50%);
+}
+.navbar{
+    font-weight: bold;
+}
+.form-control{
+    width: 50%;
+    /* margin-left: 100px;*/
+} 
+.inp{
+    margin-left: 350px;
+}
+.btn{
+
+    font-size: 15px;
+}
+.login{
+    margin-left: 485px;
+    width: 10%;
+    background-color:#6f6f6f;
+    /* color: blue; */
+} 

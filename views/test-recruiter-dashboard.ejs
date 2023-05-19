@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="TemplateMo" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+
+    <title>Recuiter Dashboard</title>
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/stylesheets/fontawesome.css" />
+    <link rel="stylesheet" href="/stylesheets/templatemo-edu-meeting.css" />
+    <link rel="stylesheet" href="/stylesheets/owl.css" />
+    <link rel="stylesheet" href="/stylesheets/lightbox.css" />
+    <link rel="stylesheet" href="/stylesheets/rec_dashboard.css" />
+    <link rel="stylesheet" href="/stylesheets/index.css" />
+  </head>
+
+  <body>
+    <section class="upcoming-meetings" id="meetings">
+      <div class="" id="container">
+        <!-- ***** Header Area Start ***** -->
+        <header class="header-area header-sticky">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <nav class="main-nav">
+                  <!-- ***** Logo Start ***** -->
+                  <a href="index" class="logo">
+                    <img src="/images/logo_white.png" alt="JMI" />
+                    PLACEMENT CELL
+                  </a>
+                  <!-- ***** Logo End ***** -->
+                  <!-- ***** Menu Start ***** -->
+                  <ul class="nav">
+                    <li>
+                      <a href="/recruiter-logout" class="active">Logout</a>
+                    </li>
+                  </ul>
+
+                  <a class="menu-trigger">
+                    <span>Menu</span>
+                  </a>
+                  <!-- ***** Menu End ***** -->
+                </nav>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- ***** Header Area End ***** -->
+
+        <form class="form-signin" id="profile">
+          <h2> <%=data.name %></h2>
+          <h3><span>Industry Type:</span> <%=data.industry_type %></h3>
+          <br />
+          <h3><span>Active Jobs:</span> 6</h3>
+          <br />
+          <h3><span>No. Of Jobs Added:</span> 14</h3>
+          <br />
+          <h3><span>Total No. of Accepted Application:</span> 218</h3>
+          <br />
+          <h3><span>Total No. of Rejected Application:</span> 956</h3>
+          <br />
+          <h3><span>E-Mail:</span>  <%=email %></h3>
+          <br />
+          <button type="submit">
+            <div class="main-button-red">
+              <div class="scroll-to-section">
+                <a href="add-job" >Add Job</a>
+              </div>
+            </div>
+          </button>
+        </form>
+
+        <form class="form-signin" id="tableavailable">
+          <h2>ACTIVE JOBS</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Min. SPI</th>
+                <th>Est. LPA</th>
+                <th>Location</th>
+                <th>Type</th>
+                <!-- <th>No. of Application</th> -->
+              </tr>
+            </thead>
+
+            <tbody>
+              <% for(let i=0; i<jobData.length; i++) {%>
+                <tr>
+                  <td> <%=jobData[i].JobID %></td>
+                  <td> <%=jobData[i].JobTitle %></td>
+                  <td> <%=jobData[i].MinSPI %></td>
+                  <td> <%=jobData[i].EstLPA %></td>
+                  <td> <%=jobData[i].Location %></td>
+                  <td> <%=jobData[i].JobType %></td>
+                  <!-- <td> <%=jobData[i].NoApplications %></td> -->
+                  <td>
+                    <button type="submit">
+                    <div class="main-button-red">
+                      <div class="scroll-to-section">
+                        <form method="post" action="/test-recruiter-dashboard">
+                          <input type="hidden" name="jobID" value="<%=jobData[i].JobID %>">
+                          <button type="submit" style="background-color: crimson; border-radius: 15px; text-decoration-line: none;
+                          text-decoration-style: solid;
+                          text-decoration-color: currentcolor;
+                          text-decoration-thickness: auto;" >VIEW</button>
+                          <!-- <button type="submit">
+                            <div class="main-button-red">
+                                <div class="scroll-to-section"><a>VIEW</a></div> -->
+                            <!-- </div> -->
+                            <!-- </button> -->
+                        </form>
+                      </div>
+                    </div>
+                  </button>
+                  </td>
+                </tr>
+              <% } %>
+            </tbody>
+          </table>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

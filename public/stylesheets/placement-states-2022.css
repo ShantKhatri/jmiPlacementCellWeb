@@ -1,0 +1,44 @@
+table
+{
+    margin-left:auto;
+     margin-right:auto;
+      text-align:center;
+}
+
+td {
+    text-align: center;
+  }
+
+  th {
+    background-color: #4f5251;
+    color: green;
+  }
+
+  
+
+  tr:hover {background-color: rgb(160,160,160);}
+
+  th, td {
+    border-bottom: 1px solid #ddd;
+  }
+
+  body, .form-control, .dropdown-menu{
+    background-color: rgb(226, 226, 226);
+}
+
+th{
+    color: aqua !important;
+}
+
+
+body > div > table > thead > tr > th{
+    background-color: black !important;
+}
+
+h1{
+    text-align: center;
+    margin-top: 73px;
+    margin-bottom: -28px;
+}
+
+

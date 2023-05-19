@@ -1,0 +1,87 @@
+
+/* sub header announcemnet font */
+body > div > div > div > div.col-lg-8.col-sm-8 > div > p > em{
+    font-weight: 700 !important;
+}
+
+
+/* header */
+body > header > div > div > div > nav > a.logo > img{
+    width: 50px;
+    margin-right: 15px;
+}
+
+@media (max-width: 767px){
+ body > header > div > div > div > nav > a.logo > img {
+    filter: invert(90%);
+}
+}
+
+.services > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* message */
+.message > div{
+    width: 1140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 0%;
+}
+div.col-lg-8 > div >img{
+    background-color: rgb(0, 0, 0);
+    width: 300px;
+    align-items: flex-start;
+    border-radius: 20px 0px 0px 20px;
+}
+.para{
+    padding: 40px 40px 0px 60px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #1f272b;
+    text-align: justify;
+}
+.para > div{
+    padding-top: 20px;
+}
+.para > h4{
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    
+}
+
+.message > div:nth-child(2){
+    margin-top: 50px;
+}
+
+section.upcoming-meetings:nth-child(7){
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+
+/* .thumb > a:nth-child(1) > img:nth-child(1){
+    height: 500px;
+    
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+} */
+
+.section-heading > h2 {
+
+    text-align: center;
+}
+
+
+
+
+section.contact-us {
+    padding: 0%;
+    height: 960px;
+}
